@@ -5,66 +5,12 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.82.7 commit date:2020-03-12, commit time:05:06, hash:375c7dc4caf4</authoring_tool>
     </contributor>
-    <created>2020-06-19T13:00:34</created>
-    <modified>2020-06-19T13:00:34</modified>
+    <created>2020-10-19T10:46:32</created>
+    <modified>2020-10-19T10:46:32</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="SolarPanelsPolycrystallineTypeBFramedClean001_3K-effect">
-      <profile_COMMON>
-        <newparam sid="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-surface">
-          <surface type="2D">
-            <init_from>SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-sampler">
-          <sampler2D>
-            <source>SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-sampler" texcoord="UVMap"/>
-            </diffuse>
-            <index_of_refraction>
-              <float sid="ior">1.45</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="WoodPlanksWorn33_3K-effect">
-      <profile_COMMON>
-        <newparam sid="WoodPlanksWorn33_COL_VAR1_3K_jpg-surface">
-          <surface type="2D">
-            <init_from>WoodPlanksWorn33_COL_VAR1_3K_jpg</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="WoodPlanksWorn33_COL_VAR1_3K_jpg-sampler">
-          <sampler2D>
-            <source>WoodPlanksWorn33_COL_VAR1_3K_jpg-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="WoodPlanksWorn33_COL_VAR1_3K_jpg-sampler" texcoord="UVMap"/>
-            </diffuse>
-            <index_of_refraction>
-              <float sid="ior">1.45</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
     <effect id="ConcreteWall001_3K-effect">
       <profile_COMMON>
         <newparam sid="ConcreteWall001_COL_VAR1_3K_jpg-surface">
@@ -119,6 +65,60 @@
         </technique>
       </profile_COMMON>
     </effect>
+    <effect id="SolarPanelsPolycrystallineTypeBFramedClean001_3K-effect">
+      <profile_COMMON>
+        <newparam sid="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-surface">
+          <surface type="2D">
+            <init_from>SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-sampler">
+          <sampler2D>
+            <source>SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="SolarPanelsPolycrystallineTypeBFramedClean001_COL_3K_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="WoodPlanksWorn33_3K-effect">
+      <profile_COMMON>
+        <newparam sid="WoodPlanksWorn33_COL_VAR1_3K_jpg-surface">
+          <surface type="2D">
+            <init_from>WoodPlanksWorn33_COL_VAR1_3K_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="WoodPlanksWorn33_COL_VAR1_3K_jpg-sampler">
+          <sampler2D>
+            <source>WoodPlanksWorn33_COL_VAR1_3K_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="WoodPlanksWorn33_COL_VAR1_3K_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
     <effect id="HEIGHT-effect">
       <profile_COMMON>
         <newparam sid="InspectionBakeLarge-surface">
@@ -165,23 +165,107 @@
     </image>
   </library_images>
   <library_materials>
-    <material id="SolarPanelsPolycrystallineTypeBFramedClean001_3K-material" name="SolarPanelsPolycrystallineTypeBFramedClean001_3K">
-      <instance_effect url="#SolarPanelsPolycrystallineTypeBFramedClean001_3K-effect"/>
-    </material>
-    <material id="WoodPlanksWorn33_3K-material" name="WoodPlanksWorn33_3K">
-      <instance_effect url="#WoodPlanksWorn33_3K-effect"/>
-    </material>
     <material id="ConcreteWall001_3K-material" name="ConcreteWall001_3K">
       <instance_effect url="#ConcreteWall001_3K-effect"/>
     </material>
     <material id="MetalSpottyDiscoloration001_3K-material" name="MetalSpottyDiscoloration001_3K">
       <instance_effect url="#MetalSpottyDiscoloration001_3K-effect"/>
     </material>
+    <material id="SolarPanelsPolycrystallineTypeBFramedClean001_3K-material" name="SolarPanelsPolycrystallineTypeBFramedClean001_3K">
+      <instance_effect url="#SolarPanelsPolycrystallineTypeBFramedClean001_3K-effect"/>
+    </material>
+    <material id="WoodPlanksWorn33_3K-material" name="WoodPlanksWorn33_3K">
+      <instance_effect url="#WoodPlanksWorn33_3K-effect"/>
+    </material>
     <material id="HEIGHT-material" name="HEIGHT">
       <instance_effect url="#HEIGHT-effect"/>
     </material>
   </library_materials>
   <library_geometries>
+    <geometry id="Circle_002-mesh" name="Circle.002">
+      <mesh>
+        <source id="Circle_002-mesh-positions">
+          <float_array id="Circle_002-mesh-positions-array" count="51">1.315 -1.181947 -0.3820213 1.127724 -1.181947 0.1463997 1.315 1.181946 -0.3820213 1.127724 1.181946 0.3820213 1.53287e-7 -1.181947 -0.3820213 1.53287e-7 -1.181947 0.1463997 1.53287e-7 1.181947 -0.3820213 1.53287e-7 1.181947 0.3820213 -1.314999 -1.181946 -0.3820213 -1.127724 -1.181946 0.1463997 -1.314999 1.181947 -0.3820213 -1.127724 1.181947 0.3820213 1.53287e-7 -0.873881 0.3820213 1.315 -0.8738811 -0.3820213 1.127724 -0.8738811 0.3820213 -1.314999 -0.8738801 -0.3820213 -1.127724 -0.87388 0.3820213</float_array>
+          <technique_common>
+            <accessor source="#Circle_002-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_002-mesh-normals">
+          <float_array id="Circle_002-mesh-normals-array" count="51">0 1 0 0.49786 0.5910657 0.6346471 0.7411364 0.6463122 0.1816523 0.9621694 -0.02917605 0.2708857 0.4967345 -0.7534641 0.4307515 0.7420725 -0.6165779 0.2629833 0 -1 0 0 -0.3206923 0.9471836 0.5592594 -0.2590447 0.78748 -0.49786 0.5910657 0.6346471 0 0.7071068 0.7071068 -0.9621694 -0.02917605 0.2708857 -0.4967345 -0.7534641 0.4307515 -0.5592594 -0.2590447 0.78748 -0.7420725 -0.6165779 0.2629833 -0.7411364 0.6463122 0.1816523 0 -0.8965291 0.4429848</float_array>
+          <technique_common>
+            <accessor source="#Circle_002-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_002-mesh-map-0">
+          <float_array id="Circle_002-mesh-map-0-array" count="144">0.5 0.2092428 0.6071981 0.4997535 0.625 0.2092428 0.4446209 0.2092428 0.4153372 0.4101635 0.4153372 0.2092428 0.6071981 0.4101635 0.5 0.2092428 0.625 0.2092428 0.5 0.1627358 0.6071981 0.04560053 0.6071981 0.1627358 0.5 0.2092428 0.3928018 0.4997535 0.5 0.4997535 0.444621 0.2092428 0.4153372 0.4101635 0.444621 0.4997535 0.5 0.2092428 0.3928019 0.4101635 0.375 0.2092428 0.3928019 0.04560095 0.5 0.1627358 0.3928019 0.1627362 0.3928019 0.1627362 0.5 0.9444196 0.3928018 0.9444196 0.444621 0.2092428 0.6400419 0.4997535 0.6400419 0.2092428 0.6071981 0.9444191 0.5 0.1627358 0.6071981 0.1627358 0.6400418 0.4997535 0.4446209 0.2092428 0.6400418 0.2092428 0.5 0.2092428 0.5 0.4997535 0.6071981 0.4997535 0.4446209 0.2092428 0.4446209 0.4997535 0.4153372 0.4101635 0.6071981 0.4101635 0.5 0.4101635 0.5 0.2092428 0.5 0.1627358 0.5 0.04560053 0.6071981 0.04560053 0.5 0.2092428 0.375 0.2092428 0.3928018 0.4997535 0.444621 0.2092428 0.4153372 0.2092428 0.4153372 0.4101635 0.5 0.2092428 0.5 0.4101635 0.3928019 0.4101635 0.3928019 0.04560095 0.5 0.04560053 0.5 0.1627358 0.3928019 0.1627362 0.5 0.1627358 0.5 0.9444196 0.444621 0.2092428 0.444621 0.4997535 0.6400419 0.4997535 0.6071981 0.9444191 0.5 0.9444196 0.5 0.1627358 0.6400418 0.4997535 0.4446209 0.4997535 0.4446209 0.2092428</float_array>
+          <technique_common>
+            <accessor source="#Circle_002-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle_002-mesh-vertices">
+          <input semantic="POSITION" source="#Circle_002-mesh-positions"/>
+        </vertices>
+        <triangles material="ConcreteWall001_3K-material" count="24">
+          <input semantic="VERTEX" source="#Circle_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_002-mesh-map-0" offset="2" set="0"/>
+          <p>6 0 0 3 1 1 2 2 2 13 3 3 1 4 4 0 5 5 1 4 6 4 6 7 0 5 8 12 7 9 1 4 10 14 8 11 6 0 12 11 9 13 7 10 14 15 11 15 9 12 16 16 13 17 4 6 18 9 12 19 8 14 20 9 12 21 12 7 22 16 13 23 16 13 24 7 10 25 11 9 26 15 11 27 11 9 28 10 15 29 3 1 30 12 7 31 14 8 32 3 1 33 13 3 34 2 2 35 6 0 36 7 10 37 3 1 38 13 3 39 14 8 40 1 4 41 1 4 42 5 16 43 4 6 44 12 7 45 5 16 46 1 4 47 6 0 48 10 15 49 11 9 50 15 11 51 8 14 52 9 12 53 4 6 54 5 16 55 9 12 56 9 12 57 5 16 58 12 7 59 16 13 60 12 7 61 7 10 62 15 11 63 16 13 64 11 9 65 3 1 66 7 10 67 12 7 68 3 1 69 14 8 70 13 3 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Circle_001-mesh" name="Circle.001">
+      <mesh>
+        <source id="Circle_001-mesh-positions">
+          <float_array id="Circle_001-mesh-positions-array" count="51">1.315 -1.181947 -0.3820213 1.127724 -1.181947 0.1463997 1.315 1.181946 -0.3820213 1.127724 1.181946 0.3820213 1.53287e-7 -1.181947 -0.3820213 1.53287e-7 -1.181947 0.1463997 1.53287e-7 1.181947 -0.3820213 1.53287e-7 1.181947 0.3820213 -1.314999 -1.181946 -0.3820213 -1.127724 -1.181946 0.1463997 -1.314999 1.181947 -0.3820213 -1.127724 1.181947 0.3820213 1.53287e-7 -0.873881 0.3820213 1.315 -0.8738811 -0.3820213 1.127724 -0.8738811 0.3820213 -1.314999 -0.8738801 -0.3820213 -1.127724 -0.87388 0.3820213</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_001-mesh-normals">
+          <float_array id="Circle_001-mesh-normals-array" count="51">0 1 0 0.49786 0.5910657 0.6346471 0.7411364 0.6463122 0.1816523 0.9621694 -0.02917605 0.2708857 0.4967345 -0.7534641 0.4307515 0.7420725 -0.6165779 0.2629833 0 -1 0 0 -0.3206923 0.9471836 0.5592594 -0.2590447 0.78748 -0.49786 0.5910657 0.6346471 0 0.7071068 0.7071068 -0.9621694 -0.02917605 0.2708857 -0.4967345 -0.7534641 0.4307515 -0.5592594 -0.2590447 0.78748 -0.7420725 -0.6165779 0.2629833 -0.7411364 0.6463122 0.1816523 0 -0.8965291 0.4429848</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_001-mesh-map-0">
+          <float_array id="Circle_001-mesh-map-0-array" count="144">0.2902068 0.2133767 0.3974049 0.5038874 0.4152068 0.2133767 0.2348277 0.2133767 0.2055439 0.4142974 0.2055439 0.2133767 0.3974049 0.4142974 0.2902068 0.2133767 0.4152068 0.2133767 0.2902068 0.1668696 0.3974049 0.04973441 0.3974049 0.1668696 0.2902068 0.2133767 0.1830086 0.5038874 0.2902068 0.5038874 0.2348278 0.2133767 0.205544 0.4142974 0.2348278 0.5038874 0.2902068 0.2133767 0.1830086 0.4142974 0.1652067 0.2133767 0.1830086 0.04973483 0.2902068 0.1668696 0.1830086 0.1668701 0.1830086 0.1668701 0.2902068 0.9485535 0.1830086 0.9485535 0.2348278 0.2133767 0.4302487 0.5038874 0.4302487 0.2133767 0.3974049 0.948553 0.2902068 0.1668696 0.3974049 0.1668696 0.4302486 0.5038874 0.2348277 0.2133767 0.4302486 0.2133767 0.2902068 0.2133767 0.2902068 0.5038874 0.3974049 0.5038874 0.2348277 0.2133767 0.2348277 0.5038874 0.2055439 0.4142974 0.3974049 0.4142974 0.2902068 0.4142974 0.2902068 0.2133767 0.2902068 0.1668696 0.2902068 0.04973441 0.3974049 0.04973441 0.2902068 0.2133767 0.1652067 0.2133767 0.1830086 0.5038874 0.2348278 0.2133767 0.205544 0.2133767 0.205544 0.4142974 0.2902068 0.2133767 0.2902068 0.4142974 0.1830086 0.4142974 0.1830086 0.04973483 0.2902068 0.04973441 0.2902068 0.1668696 0.1830086 0.1668701 0.2902068 0.1668696 0.2902068 0.9485535 0.2348278 0.2133767 0.2348278 0.5038874 0.4302487 0.5038874 0.3974049 0.948553 0.2902068 0.9485535 0.2902068 0.1668696 0.4302486 0.5038874 0.2348277 0.5038874 0.2348277 0.2133767</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle_001-mesh-vertices">
+          <input semantic="POSITION" source="#Circle_001-mesh-positions"/>
+        </vertices>
+        <triangles material="ConcreteWall001_3K-material" count="24">
+          <input semantic="VERTEX" source="#Circle_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_001-mesh-map-0" offset="2" set="0"/>
+          <p>6 0 0 3 1 1 2 2 2 13 3 3 1 4 4 0 5 5 1 4 6 4 6 7 0 5 8 12 7 9 1 4 10 14 8 11 6 0 12 11 9 13 7 10 14 15 11 15 9 12 16 16 13 17 4 6 18 9 12 19 8 14 20 9 12 21 12 7 22 16 13 23 16 13 24 7 10 25 11 9 26 15 11 27 11 9 28 10 15 29 3 1 30 12 7 31 14 8 32 3 1 33 13 3 34 2 2 35 6 0 36 7 10 37 3 1 38 13 3 39 14 8 40 1 4 41 1 4 42 5 16 43 4 6 44 12 7 45 5 16 46 1 4 47 6 0 48 10 15 49 11 9 50 15 11 51 8 14 52 9 12 53 4 6 54 5 16 55 9 12 56 9 12 57 5 16 58 12 7 59 16 13 60 12 7 61 7 10 62 15 11 63 16 13 64 11 9 65 3 1 66 7 10 67 12 7 68 3 1 69 14 8 70 13 3 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
     <geometry id="Cube_044-mesh" name="Cube.044">
       <mesh>
         <source id="Cube_044-mesh-positions">
@@ -527,6 +611,36 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
+      <node id="Circle_002" name="Circle.002" type="NODE">
+        <matrix sid="transform">0.1391733 0.9902681 0 -4.518909 -0.9902681 0.1391733 0 8.997891 0 0 1 0.4979894 0 0 0 1</matrix>
+        <instance_geometry url="#Circle_002-mesh" name="Circle.002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ConcreteWall001_3K-material" target="#ConcreteWall001_3K-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="MetalSpottyDiscoloration001_3K-material" target="#MetalSpottyDiscoloration001_3K-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Circle_001" name="Circle.001" type="NODE">
+        <matrix sid="transform">-0.1391732 -0.9902681 0 -16.89471 0.9902681 -0.1391732 0 7.258584 0 0 1 0.4979894 0 0 0 1</matrix>
+        <instance_geometry url="#Circle_001-mesh" name="Circle.001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ConcreteWall001_3K-material" target="#ConcreteWall001_3K-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="MetalSpottyDiscoloration001_3K-material" target="#MetalSpottyDiscoloration001_3K-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
       <node id="Cube_005" name="Cube.005" type="NODE">
         <matrix sid="transform">2.955094 0.327537 0.1466427 17.4583 -0.693661 1.395354 0.6247186 24.55999 0 -1.1992 0.7669567 5.050604 0 0 0 1</matrix>
         <instance_geometry url="#Cube_044-mesh" name="Cube.005">
