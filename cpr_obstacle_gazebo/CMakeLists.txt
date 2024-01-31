@@ -7,7 +7,5 @@ catkin_package()
 
 roslaunch_add_file_check(launch)
 
-install(
-  DIRECTORY launch models urdf worlds
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+install(DIRECTORY launch models urdf worlds
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
